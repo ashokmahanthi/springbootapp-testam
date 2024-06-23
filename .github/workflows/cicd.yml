@@ -32,8 +32,6 @@ jobs:
       run: chmod +x ./mvnw
 
     - name: Build with Maven
-      run: ./mvnw clean install
+      run: mvn clean install
 
-    - name: Test with Maven (with debug logging)
-      run: ./mvnw test -e -X
-      continue-on-error: true
+
